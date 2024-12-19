@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Software Developer</title>
+  <style>
+    /* Reset some styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      font-family: 'Helvetica', sans-serif;
+      background-color: #fafafa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header styling */
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      padding: 50px 0;
+      border-bottom: 2px solid #eee;
+    }
+
+    header img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-right: 20px;
+      border: 4px solid #333;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #333;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #666;
+      font-weight: 300;
+    }
+
+    /* Main container */
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    /* Projects Section */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding-top: 40px;
+    }
+
+    .project-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .project-info {
+      padding: 20px;
+    }
+
+    .project-info h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .project-info p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .project-info a {
+      text-decoration: none;
+      color: #997C70;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+
+    .project-info a:hover {
+      color: #333;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      color: #333;
+      font-size: 0.9rem;
+      border-top: 2px solid #eee;
+    }
+
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      header img {
+        margin-bottom: 20px;
+      }
+    }
+
+    /* Biography Section */
+    .biography-container {
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    }
+
+    .biography-container h2 {
+    font-size: 2rem;
+    color: #997C70;
+    margin-bottom: 20px;
+    }
+
+    .biography-container p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="https://media.licdn.com/dms/image/v2/D4E03AQEGt8iRzx_uRw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1704226185147?e=1740009600&v=beta&t=62Fdl4WnpO2VmIqTR7SwUL3eyZ7FJ-7SHPRtDli4wHY" alt="Your Name">
+    <div>
+      <h1>Dania Masoud</h1>
+      <!-- <p> <a src="https://www.linkedin.com/in/dania-masoud/"> LinkedIn </a> | GitHub | Email</p> -->
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/dania-masoud" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/Dania003" target="_blank">GitHub</a> |
+        <a href="mailto:your-demasoud@uwaterloo.ca">Email</a>
+      </div>  
+    </div>
+  </header>
+
+  <!-- Biography Section -->
+  <div class="biography-container">
+    <h2>About Me</h2>
+    <p>Hi! I am Dania, I am a computer engineering student at the University Of Waterloo who likes to build stuff using code.</p>
+  </div>
+  
+
+  <!-- Main Container -->
+  <div class="container">
+    <section class="projects">
+
+    <!-- Project 4 -->
+    <div class="project-card">
+        <img src="https://i0.wp.com/embeddedexplorer.com/wp-content/uploads/2022/10/stm32-nucleo-64-l433rc-p.webp?resize=1536%2C1005&ssl=1" alt="Real-Time Executive Project">
+        <div class="project-info">
+        <h3>Real-Time Executive on ARM Cortex M4</h3>
+        <p>A Real-Time Executive (RTX) on the ARM Cortex M4 microprocessor, supporting priority scheduling (via deadlines), pre-emption through context switching, and dynamic memory management. The project includes writing fundamental kernel API functions like osKernelInit, osCreateTask, implementing an Earliest Deadline First (EDF) scheduler, and developing dynamic memory functions (malloc and free) for memory management. The project was developed in C and ARM Assembly, using STM32Cube IDE with STM32F401RE as the microcontroller.</p>
+        <!-- <a href="https://github.com/your-username/real-time-executive" target="_blank">View Project</a> -->
+        </div>
+    </div>
+
+      <!-- Project 1 -->
+    <div class="project-card">
+        <img src="https://github.com/Dania003/Car-Detector/blob/main/Car_pic.png?raw=true" alt="Car Detection System">
+        <div class="project-info">
+        <h3>Car Detection System</h3>
+        <p>An AI-powered vehicle detection system designed to detect and track cars in real-time. Built using Python's OpenCV library, this software utilizes advanced computer vision techniques such as object detection and tracking to analyze video streams and accurately identify vehicles. The system can process live video feeds and detect cars, making it ideal for applications in traffic monitoring, smart city solutions, and security. This project won 1st place in the **Toyota Innovation Challenge 2022**, showcasing its potential to revolutionize urban transportation systems and traffic management.</p>
+        <a href="https://github.com/Dania003/Car-Detector" target="_blank">View Project</a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <img src="https://github.com/Dania003/Mother-Baby-SmartWatch/blob/main/1698305855423.jpg?raw=true" alt="GPS Simulator">
+        <div class="project-info">
+        <h3>MP3 Player</h3>
+        <p>A MP3 player system using an FPGA to decode and play MP3 audio files stored on an SD card. The system was programmed in C and implemented on an FPGA platform. Technologies Used: C programming, FPGA, SD card integration, MP3 Audio Decoding, Hardware Control Logic, Low-latency Audio Playback</p>
+        </div>
+    </div>  
+
+    <!-- Project 3 -->
+    <div class="project-card">
+        <img src="https://github.com/Dania003/Graph-Data-Structure/blob/main/gps.png?raw=true" alt="GPS Simulator">
+        <div class="project-info">
+        <h3>GPS Simulator</h3>
+        <p>A GPS simulator system that finds the shortest path between two locations. Given a map of N houses and their connections, the program organizes the data into a graph implemented using an adjacency list. It uses Prim's algorithm and a heap data structure to find the Minimum Spanning Tree (MST), allowing the GPS to suggest the shortest route from house A to house B.</p>
+        <a href="https://github.com/Dania003/Graph-Data-Structure/tree/main#graph-data-structure" target="_blank">View Project</a>
+        </div>
+    </div>  
+
+      <!-- Project 2 -->
+    <div class="project-card">
+        <img src="https://github.com/Dania003/Mother-Baby-SmartWatch/blob/main/MBSW.png?raw=true" alt="Mother-Baby SmartWatch Project">
+        <div class="project-info">
+        <h3>MB SmartWatch</h3>
+        <p>An application on wearable devices designed to monitor the health and well-being of both pregnant mothers and their fetus. It tracks vital signs, provides real-time alerts, and offers a connected experience for healthcare professionals to ensure safety and comfort during pregnancy and early childhood.</p>
+        <a href="https://github.com/Dania003/Mother-Baby-SmartWatch" target="_blank">View Project</a>
+        </div>
+    </div>
+
+  
+  
+
+      <!-- Add more projects here -->
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Dania Masoud | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
